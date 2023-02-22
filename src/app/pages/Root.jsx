@@ -1,7 +1,7 @@
 import React from "react";
 
 function Root(props) {
-  return <div>Root Page</div>;
+  return <div>Install Styled Component</div>;
 }
 
 export default Root;
