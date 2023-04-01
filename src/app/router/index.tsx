@@ -6,7 +6,7 @@ const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <Root name="jinwan" age={3} />,
+      element: <Root />,
       children: [
         {
           path: "speech",
