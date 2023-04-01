@@ -1,4 +1,3 @@
-import { basename } from "path";
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../../pages/Root";
 import SpeechComponent from "../../pages/Speech";
