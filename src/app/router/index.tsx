@@ -1,10 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "../pages/Root";
+import Root from "../../pages/Root";
+import SpeechComponent from "../../pages/Speech";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Root name="jinwan" age={3} />,
+    children: [
+      {
+        path: "speech",
+        element: <SpeechComponent />,
+      },
+    ],
   },
 ]);
 
