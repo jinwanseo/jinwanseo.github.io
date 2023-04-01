@@ -4,17 +4,24 @@ import SpeechComponent from "../../pages/Speech";
 
 console.log(window.location.origin);
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+      children: [
+        {
+          path: "speech",
+          element: <SpeechComponent />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <SpeechComponent />,
-    //   {
-    //     path: "speech",
-    //     element:
-    //   },
-    // ],
-    // children: [
-  },
-]);
+    ...(window.location.origin.includes("localhost")
+      ? {}
+      : { basename: window.location.origin }),
+  }
+);
 
 export default router;
