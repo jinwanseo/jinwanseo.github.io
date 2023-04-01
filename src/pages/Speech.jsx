@@ -1,5 +1,6 @@
 import { Cached } from "@mui/icons-material";
 import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
+import { useForm } from "react-hook-form";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
@@ -12,6 +13,24 @@ function SpeechComponent() {
     browserSupportsSpeechRecognition,
   } = useSpeechRecognition();
 
+  const methods = useForm({
+    mode: "onChange",
+  });
+
+  const { handleSubmit } = methods;
+
+  const handlers = {
+    onSpeechStart: () => {
+      SpeechRecognition.startListening({
+        continuous: true,
+        language: "ko",
+      });
+    },
+    onSpeechEnd: () => {
+      SpeechRecognition.stopListening();
+    },
+  };
+
   if (!browserSupportsSpeechRecognition) {
     return <>지원하지 않는 브라우저!</>;
   }
@@ -23,20 +42,11 @@ function SpeechComponent() {
         <Button
           variant="outlined"
           size="small"
-          onClick={() =>
-            SpeechRecognition.startListening({
-              continuous: true,
-              language: "ko",
-            })
-          }
+          onClick={handlers.onSpeechStart}
         >
           시작
         </Button>
-        <Button
-          variant="outlined"
-          size="small"
-          onClick={() => SpeechRecognition.stopListening()}
-        >
+        <Button variant="outlined" size="small" onClick={handlers.onSpeechEnd}>
           종료
         </Button>
         <IconButton size="small" color="warning" onClick={resetTranscript}>
