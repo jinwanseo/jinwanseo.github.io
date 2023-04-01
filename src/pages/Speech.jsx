@@ -23,17 +23,19 @@ function SpeechComponent() {
         <Button
           variant="outlined"
           size="small"
-          onClick={SpeechRecognition.startListening({
-            continuous: true,
-            language: "ko",
-          })}
+          onClick={() =>
+            SpeechRecognition.startListening({
+              continuous: true,
+              language: "ko",
+            })
+          }
         >
           시작
         </Button>
         <Button
           variant="outlined"
           size="small"
-          onClick={SpeechRecognition.stopListening}
+          onClick={() => SpeechRecognition.stopListening()}
         >
           종료
         </Button>
