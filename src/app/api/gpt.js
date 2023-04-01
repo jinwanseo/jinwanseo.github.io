@@ -7,5 +7,3 @@ export const uploadSpeech = (data) => {
     data,
   });
 };
-
-export const downloadSpeech = () => {};

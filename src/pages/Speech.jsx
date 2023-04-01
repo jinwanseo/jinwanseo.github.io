@@ -1,5 +1,7 @@
-import { Cached } from "@mui/icons-material";
-import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
+import { Cached, Mic } from "@mui/icons-material";
+import { Button, IconButton, Stack, Typography } from "@mui/material";
+import { blueGrey, green, teal } from "@mui/material/colors";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import SpeechRecognition, {
   useSpeechRecognition,
@@ -13,6 +15,7 @@ function SpeechComponent() {
     resetTranscript,
     browserSupportsSpeechRecognition,
   } = useSpeechRecognition();
+  const [answer, setAnswer] = useState();
 
   const methods = useForm({
     mode: "onChange",
@@ -22,19 +25,28 @@ function SpeechComponent() {
 
   const handlers = {
     onSpeechStart: () => {
+      setAnswer(null);
       SpeechRecognition.startListening({
         continuous: true,
         language: "ko",
       });
     },
     onSpeechEnd: async () => {
+      // 중지
       SpeechRecognition.stopListening();
 
-      const res = await gptAPI.uploadSpeech({
-        question: transcript,
+      // 업로드
+      const { data, status } = await gptAPI.uploadSpeech({
+        question: "안녕하세요",
       });
 
-      console.log(res);
+      resetTranscript();
+      if (status < 300) {
+        setAnswer(data.answer);
+      }
+
+      // 리셋
+      resetTranscript();
     },
   };
 
@@ -43,24 +55,36 @@ function SpeechComponent() {
   }
   return (
     <Stack spacing={1}>
-      <Typography>내손안의 GPT</Typography>
-      <Typography>{listening ? "ON" : "OFF"}</Typography>
+      <Typography
+        variant="suttitle1"
+        color={teal[900]}
+        fontSize={20}
+        fontWeight={700}
+      >
+        내손안의 GPT
+      </Typography>
+      <Stack direction="row" spacing={1}>
+        <Typography>{transcript}</Typography>
+      </Stack>
       <Stack direction={"row"} spacing={1}>
-        <Button
-          variant="outlined"
-          size="small"
-          onClick={handlers.onSpeechStart}
+        <IconButton
+          size="large"
+          color={listening ? green["A200"] : blueGrey[400]}
+          sx={{
+            border: `2px solid ${listening ? green["A200"] : blueGrey[400]}`,
+            ":hover": {
+              scale: 1.1,
+            },
+          }}
+          onClick={listening ? handlers.onSpeechEnd : handlers.onSpeechStart}
         >
-          시작
-        </Button>
-        <Button variant="outlined" size="small" onClick={handlers.onSpeechEnd}>
-          종료
-        </Button>
-        <IconButton size="small" color="warning" onClick={resetTranscript}>
-          <Cached fontSize={"small"} />
+          <Mic fontSize="large" />
         </IconButton>
       </Stack>
-      <Box>{transcript}</Box>
+
+      <Stack direction="row" spacing={1}>
+        <Typography>{answer}</Typography>
+      </Stack>
     </Stack>
   );
 }

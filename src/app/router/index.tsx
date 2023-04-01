@@ -8,12 +8,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <SpeechComponent />,
-    // children: [
     //   {
     //     path: "speech",
     //     element:
     //   },
     // ],
+    // children: [
   },
 ]);
 
