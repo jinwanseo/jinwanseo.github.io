@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import SpeechRecognition, {
   useSpeechRecognition,
 } from "react-speech-recognition";
+import * as gptAPI from "../app/api/gpt";
 
 function SpeechComponent() {
   const {
@@ -26,8 +27,14 @@ function SpeechComponent() {
         language: "ko",
       });
     },
-    onSpeechEnd: () => {
+    onSpeechEnd: async () => {
       SpeechRecognition.stopListening();
+
+      const res = await gptAPI.uploadSpeech({
+        question: transcript,
+      });
+
+      console.log(res);
     },
   };
 

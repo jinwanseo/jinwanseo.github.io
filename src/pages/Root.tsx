@@ -1,9 +1,9 @@
 import { Stack, Typography } from "@mui/material";
 import { Outlet } from "react-router-dom";
-
-console.log(process.env.PUBLIC_URL);
+import useAxios from "../app/hooks/useAxios";
 
 function Root() {
+  useAxios();
   return (
     <Stack spacing={1}>
       <Typography>Jinwanseo Blog</Typography>

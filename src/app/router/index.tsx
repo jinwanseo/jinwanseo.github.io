@@ -2,22 +2,19 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../../pages/Root";
 import SpeechComponent from "../../pages/Speech";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <Root />,
-      children: [
-        {
-          path: "speech",
-          element: <SpeechComponent />,
-        },
-      ],
-    },
-  ],
+console.log(window.location.origin);
+
+const router = createBrowserRouter([
   {
-    basename: process.env.PUBLIC_URL,
-  }
-);
+    path: "/",
+    element: <SpeechComponent />,
+    // children: [
+    //   {
+    //     path: "speech",
+    //     element:
+    //   },
+    // ],
+  },
+]);
 
 export default router;

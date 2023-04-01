@@ -1,4 +1,4 @@
-import { api } from "app/hooks/useAxios";
+import { api } from "../../app/hooks/useAxios";
 
 export const uploadSpeech = (data) => {
   return api({
