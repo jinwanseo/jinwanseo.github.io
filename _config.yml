@@ -12,19 +12,19 @@ phone: 010-8888-6306
 website: https://jinwanseo.site
 darkmode: true
 
-github_username:  jinwanseo
+github_username: jinwanseo
 
 instagram_username: roimemory
 
 additional_links:
-- title: Tistory
-  icon: fas fa-blog
-  url: https://goodmemory.tistory.com/
+  - title: Tistory
+    icon: fas fa-blog
+    url: https://goodmemory.tistory.com/
 
 about_profile_image: /images/profile.jpg
-about_content: | 
+about_content: |
   Java & Spring / TypeScript & NestJS / Python & FastAPI / React / AWS 기반의 3년차 웹 서비스 개발자로 
-  **우리카드, 한샘 등 다양한 기업의 RPA 웹 포탈 서비스를 구축**해왔고, 현재는 **KB 손해보험의 (POC) AI 기반의 문서 이미지 OCR, 챗봇 서비스 및 NLP 모듈 개발 중**에 있습니다.
+  **우리카드, 한샘 등 다양한 기업의 RPA 웹 포탈 서비스를 구축**해왔고, 현재는 **KB 라이프의 (POC) AI 기반의 문서 이미지 OCR, 챗봇 서비스 및 NLP 모듈 개발 중**에 있습니다.
   
   진정한 웹 서비스 개발자는 포지션에 큰 의미를 두지 않고 <mark>프로젝트에 도움이 되는 역할</mark>을 해야한다는 생각에 HTML/CSS 부터 JENKINS CI/CD 까지 다양한 업무를 경계없이 수행하였습니다.
   이러한 경험을 통해 어떤 포지션이든 <mark>즉시 전력이 될 준비</mark>가 되어있으며 동료들의 긴급한 휴가 또는 부재시 빈 자리를 채워줄 수 있습니다.
@@ -43,12 +43,12 @@ content:
         link_text: https://rbrain.co.kr
         caption: 2021.08 - 현재
 
-        description: | 
-          - 우리카드, 한샘 웹 포탈 서비스 프론트 엔드 부분 아키텍처 설계 및 개발
-          - KB 금융 그룹 AI 기반의 문서 이미지 OCR, NLP 모듈 개발
+        description: |
+          - 우리카드, 한샘 웹 포탈 서비스 프론트 부분 아키텍처 설계 및 개발
+          - KB 라이프 POC AI 기반의 문서 이미지 OCR, NLP 모듈 개발
           - AWS EC2, S3 등을 이용한 서비스 배포 및 운영
           - Jenkins CI/CD 파이프라인 구축
-          - 애자일 환경에서의 개발 및 협업
+          - 애자일 환경에서의 개발 및 코드 리뷰
 
       - layout: left
         title: 컴세바 IT 학원
@@ -73,7 +73,7 @@ content:
           - NestJS & TypeScript (TypeORM)
           - FastAPI & Python (SQLAlchemy)
           - IntelliJ IDEA / VSCode / PyCharm
-          
+
 
       - layout: left
         title: DevOps
@@ -85,8 +85,8 @@ content:
 
       - layout: left
         title: Frontend
-        description: | 
-          - React & React Native & TypeScript (Lint, Prettier)
+        description: |
+          - React & Native & TypeScript
           - Material-UI, Tailwind CSS
           - Npm, Webpack
           - IntelliJ WebStorm / VSCode
@@ -99,14 +99,14 @@ content:
         sub_title: RPA 웹 포탈 서비스
         description: |
           - 금융권 보안 정책 준수를 위한 보안 코드 작성 및 외부 모듈 사용 최소화
-          - Webpack 과 ES6 만을 사용하여 웹 퍼블리셔와 함께 웹 서비스 개발
+          - Webpack & ES6 만을 사용하여 웹 퍼블리셔와 함께 웹 서비스 개발
           - 디자인 협업툴 Figma 를 사용하여 디자이너와의 원활한 소통읉 통해 디자인 시안을 빠르게 반영
 
       - layout: left
         title: 한샘
         sub_title: RPA 웹 포탈 서비스
         description: |
-          - React / MUI 기반의 프론트엔드 아키텍처 설계 및 개발
+          - React & MUI 기반의 프론트엔드 아키텍처 설계 및 개발
           - Spring 기반의 백엔드 개발자의 퇴사에 따른 백엔드 개발 업무 수행
           - Jenkins CI/CD 파이프라인 구축 및 운영
 
@@ -179,8 +179,8 @@ content:
       - layout: right
         title: 개발자는 개발만<br/> 잘 하면 되는가?
         description: |
-            웹 개발은 사용자와의 사업자간의 접점을 만들어내는 일이기 때문에 유연한 사고가 개발 능력 만큼 중요하다고 생각합니다.
-            만약 갑작스러운 인력의 부재로 개발 인력은 물론, 개발과 관련이 없는 영업 인력의 부재라도 회사와 프로젝트에 도움이될 수 있다면 언제든지 채울 수 있는 마음가짐이 되어있습니다.  
+          웹 개발은 사용자와의 사업자간의 접점을 만들어내는 일이기 때문에 유연한 사고가 개발 능력 만큼 중요하다고 생각합니다.
+          만약 갑작스러운 인력의 부재로 개발 인력은 물론, 개발과 관련이 없는 영업 인력의 부재라도 회사와 프로젝트에 도움이될 수 있다면 언제든지 채울 수 있는 마음가짐이 되어있습니다.  
 
 
 #  - title: Certificate
@@ -200,9 +200,9 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
-exclude : [
+exclude: [
   "Gemfile",
   "Gemfile.lock",
   "node_modules",
@@ -213,4 +213,4 @@ exclude : [
   "lib/",
   "scripts/",
   "docker-compose.yml",
-  ]
+]
