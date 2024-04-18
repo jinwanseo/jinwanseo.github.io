@@ -127,7 +127,7 @@ content:
           - Python 기반의 Job Worker 및 DALLE-3 기반 이미지 생성 모듈 개발
 
       - layout: left
-        title: KB 손해보험 POC
+        title: KB 라이프 POC
         sub_title: AI 모듈
         description: |
           - FastAPI 기반의 백엔드 개발 지원
