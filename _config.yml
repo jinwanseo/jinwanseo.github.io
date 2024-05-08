@@ -21,6 +21,7 @@ additional_links:
     icon: fas fa-blog
     url: https://goodmemory.tistory.com/
 
+about_mp3: /audio/drum.mp3
 about_profile_image: /images/profile.jpg
 about_content: |
   Java & Spring / TypeScript & NestJS / Python & FastAPI / React / AWS 기반의 3년차 웹 서비스 개발자로 
@@ -97,6 +98,8 @@ content:
       - layout: left
         title: 우리카드
         sub_title: RPA 웹 포탈 서비스
+        link: https://jinwanseo.notion.site/36e9751a60274c34b99c313234301621?v=f2aa41516595422086a619a073825055
+        link_text: https://wooricard-portfolio.site
         description: |
           - 금융권 보안 정책 준수를 위한 보안 코드 작성 및 외부 모듈 사용 최소화
           - Webpack & ES6 만을 사용하여 웹 퍼블리셔와 함께 웹 서비스 개발
@@ -105,16 +108,30 @@ content:
       - layout: left
         title: 한샘
         sub_title: RPA 웹 포탈 서비스
+        link: https://jinwanseo.notion.site/8b3e9d8d17884128b742e0bae95ddd84?v=91de99dfcfd745369187860f28edb0a6
+        link_text: https://hanssem-portfolio.site
         description: |
           - React & MUI 기반의 프론트엔드 아키텍처 설계 및 개발
           - Spring 기반의 백엔드 개발자의 퇴사에 따른 백엔드 개발 업무 수행
           - Jenkins CI/CD 파이프라인 구축 및 운영
 
       - layout: left
+        title: 내손안의 GPT
+        sub_title: 대화형 AI 서비스
+        link: https://jinwanseo.notion.site/aeddcef9fc5048958d7b3b21cf7aad4d?v=367698242823429bb4d03b9cbf8e92ea
+        link_text: https://mygpt-portfolio.site
+        description: |
+          - TypeScript & NestJS 기반의 백엔드 개발
+          - React & MUI 기반의 프론트 개발
+          - Nginx, AWS 를 이용한 서비스 배포
+
+      - layout: left
         title: 스탠바이투게더
         sub_title: 스마트 대기 플랫폼
+        link: https://jinwanseo.notion.site/4b0dc5a2a9ca4c8bb723bf9dc04a1f4c?v=81282e80898e4668840f35cae6d18b0f&pvs=4
+        link_text: https://standbytogether-portfolio.site
         description: |
-          - NestJS & TypeScript 기반의 백엔드 개발
+          - Java & Spring 기반의 백엔드 개발
           - React & TailwindCSS 기반의 프론트 개발
           - AWS (EC2, S3) 를 이용한 서비스 배포
 
@@ -127,10 +144,12 @@ content:
           - Python 기반의 Job Worker 및 DALLE-3 기반 이미지 생성 모듈 개발
 
       - layout: left
-        title: KB 라이프 POC
+        title: KB 손해보험 POC
+        link: https://jinwanseo.notion.site/a41ddf1fa20a47a684469f621ecb9eed?v=a495914330cc453185a330f9056406c5&pvs=4
+        link_text: https://kblife-portfolio.site
         sub_title: AI 모듈
         description: |
-          - FastAPI 기반의 백엔드 개발 지원
+          - Python & FastAPI 기반의 백엔드 개발 지원
           - PDF 문서, 이미지 파일 OCR 모듈 개발 
           - ChatBot 서비스를 위한 NLP 모듈 개발
 

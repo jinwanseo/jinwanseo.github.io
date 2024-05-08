@@ -694,10 +694,10 @@ node_modules/
 # Visual Studio 6 workspace options file
 *.opt
 
-# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+# Visual Studio 6 auto-generated workspace file (contains which files were open audio.)
 *.vbw
 
-# Visual Studio 6 auto-generated project file (contains which files were open etc.)
+# Visual Studio 6 auto-generated project file (contains which files were open audio.)
 *.vbp
 
 # Visual Studio 6 workspace and project file (working project files containing files to include in project)

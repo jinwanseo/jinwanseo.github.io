@@ -1,10 +1,18 @@
 <div class="container header-container">
+
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
       <h1>{{ site.name | escape }}</h1>
       <h2>{{ site.title | escape }}</h2>
+      <audio
+              src="{{site.about_mp3}}" autoplay controls loop preload="auto"
+              style="height: 25px; margin: 10px 0px; width: 200px;"
+      ></audio>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
+
+
+
       <ul class="icons no-print">
         {%- if site.dribbble_username -%}
           <li>
@@ -106,6 +114,8 @@
         {% endfor %}
       </ul>
 
+
+
       {%- if site.email -%}
         <p>
           {{ site.email_title | default: "Email" }}: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
@@ -121,6 +131,8 @@
           {{ site.website_title | default: "Web" }}: {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
+
+
     </div>
   </div>
 </div>
