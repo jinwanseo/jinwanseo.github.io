@@ -9,7 +9,7 @@ name: Jinwan Seo
 title: Web Service Developer
 email: jinwanseo@gmail.com
 phone: 010-8888-6306
-website: https://jinwanseo.site
+#website: https://jinwanseo.site
 darkmode: true
 
 github_username: jinwanseo
@@ -28,9 +28,7 @@ about_content: |
   **우리카드, 한샘 등 다양한 기업의 RPA 웹 포탈 서비스를 구축**해왔고, 현재는 **KB 라이프의 (POC) AI 기반의 문서 이미지 OCR, 챗봇 서비스 및 NLP 모듈 개발 중**에 있습니다.
   
   진정한 웹 서비스 개발자는 포지션에 큰 의미를 두지 않고 <mark>프로젝트에 도움이 되는 역할</mark>을 해야한다는 생각에 HTML/CSS 부터 JENKINS CI/CD 까지 다양한 업무를 경계없이 수행하였습니다.
-  이러한 경험을 통해 어떤 포지션이든 <mark>즉시 전력이 될 준비</mark>가 되어있으며 동료들의 긴급한 휴가 또는 부재시 빈 자리를 채워줄 수 있습니다.
-  
-  현재는 (주) 레인보우 브레인에서 근무중이며 <mark>백엔드 개발</mark>을 주로 하고 있습니다.
+  이러한 경험을 통해 어떤 포지션이든 <mark>즉시 전력이 될 준비</mark>가 되어있습니다. 현재는 (주) 레인보우 브레인에서 근무중이며 <mark>백엔드 개발</mark>을 주로 하고 있습니다.
 
 
 content:
@@ -40,8 +38,8 @@ content:
       - layout: left
         title: 레인보우 브레인
         sub_title: 책임 연구원
-        link: https://rbrain.co.kr
-        link_text: https://rbrain.co.kr
+#        link: https://rbrain.co.kr
+#        link_text: https://rbrain.co.kr
         caption: 2021.08 - 현재
 
         description: |
@@ -54,8 +52,8 @@ content:
       - layout: left
         title: 컴세바 IT 학원
         sub_title: C/C++ 강사
-        link: http://comseba.co.kr
-        link_text: http://comseba.co.kr
+#        link: http://comseba.co.kr
+#        link_text: http://comseba.co.kr
         caption: 2018.01 - 2018.08
 
         description: |
