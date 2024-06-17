@@ -176,12 +176,12 @@ content:
 
       - layout: top-middle
         title: Spring Boot Course
-        sub_title: 배달의 민족 김영한 Spring 완전 정복 코스 (수료)
+        sub_title: 우아한 형제들 김영한 Spring 완전 정복 코스 (수료)
         caption: 2023.04 - 2023.10
 
       - layout: top-middle
         title: Spring JPA Course
-        sub_title: 배달의 민족 김영한 JPA 완전 정복 코스 (수료)
+        sub_title: 우아한 형제들 김영한 JPA 완전 정복 코스 (수료)
         caption: 2023.10 - 2024.01
 
   - title: Philosophy
@@ -198,7 +198,7 @@ content:
         description: |
           회사의 요구사항에 맞춘 기술 스택을 사용하면서도 안정성을 유지하는 것은 매우 중요합니다. 
           저는 여러 프로젝트에서 깊이 있는 이해를 바탕으로 최적화된 기능을 신속하게 학습하고 적용하여 안정적인 시스템을 구축해왔습니다. 
-          이는 AI와 같은 빠르게 변하는 IT 동향에서도 중요한 역량으로, 고객과 기업의 요구사항에 맞는 최적의 기술을 도입하여 안정성을 유지하며 개발할 수 있습니다.
+          이는 AI의 도입 등과 같은 빠르게 변하는 IT 동향에서도 중요한 역량으로, 고객과 기업의 요구사항에 맞는 최적의 기술을 도입하여 안정성을 유지하며 개발할 수 있습니다.
 
       - layout: left
         title: 정말 서비스에 대해<br/>잘 이해하고 있는가?
